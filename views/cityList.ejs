@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Country</th>
+        <th>Name</th>
+        <th>Population</th>
+        <th>Coast</th>
+        <th>Area(km)</th>
+    </tr>
+
+    <% cities.forEach((city) => {%>
+        <tr>
+            <td><%= city.cty_code %></td>
+            <td><%= city.co_code %></td>
+            <td><%= city.cty_name %></td>
+            <td><%= city.population %></td>
+            <td><%= city.isCoastal %></td>
+            <td><%= city.areaKM %></td>
+
+        </tr>
+    <% }) %>
+</table>
+<a href="/">Home</a>
